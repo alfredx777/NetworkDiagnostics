@@ -22,3 +22,12 @@ A simple menu-driven script for quick network troubleshooting on Windows.
 Logs are saved as `network_log.txt` and full reports as `network_report.txt`.
 
 ---
+## How to Run the Scripts if direct "run with PowerShell" doesn't work
+
+1. Open PowerShell as Adimininstrator
+
+2. Allow scripts for this session only  
+   ```powershell
+    Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+in the same session, locate your NetworkDiagnostic.ps1 
+cd $HOME\path.\NetworkDiagnostic.ps1
